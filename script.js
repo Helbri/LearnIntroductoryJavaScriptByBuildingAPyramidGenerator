@@ -6,8 +6,8 @@ let count = 8;
 let rows = ["Naomi", "Quincy", "CamperChan"];
 // impression de la première valeur contenue dans le tableau rows
 console.log(rows[0]);
-// la valeur 10 est assignée à l'index 2
-rows[2] = 10;
+// la valeur 10 est assignée à l'index de l'avant-dernier élément du tableau
+rows[rows.length - 1] = 10;
 // impression de l'ensemble des valeurs du tableau rows
 console.log(rows);
-// step 20
+// step 21
