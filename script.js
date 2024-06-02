@@ -1,5 +1,5 @@
 // déclaration variable character et initialisation avec 'Hello'
-let character = 'Hello';
+let character = "Hello";
 // console.log de la variable character pour afficher ce qu'elle contient dans la console JavaScript (Hello)
 console.log(character);
 // nouvelle assignation de chaîne à la variable character ("World")
@@ -10,6 +10,6 @@ console.log(character);
 let secondCharacter;
 // console.log de la variable secondCharacter pour afficher ce qu'elle contient (montre "undefined")
 console.log(secondCharacter);
-// assignation de la valeur Test à la variable secondCharacter
-secondCharacter = "Test";
-// step 9
+// assignation de la valeur de la variable character à la variable secondCharacter
+secondCharacter = character;
+// step 10
