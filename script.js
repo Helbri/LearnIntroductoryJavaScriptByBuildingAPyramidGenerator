@@ -1,8 +1,13 @@
-// la variable character est déclarée, et pour son initialisation, la valeur Hello lui est assignée
+// déclaration variable character et initialisation avec 'Hello' (quote)
 let character = "Hello";
-// on fait afficher la valeur de la variable character dans la console (Hello)
-console.log(character);
-// la valeur World est assignée à la variable character
-character = "World";
-// on fait afficher la valeur de la variable character dans la console (World)
-console.log(character);
+// déclaration variable count et initialisation avec la valeur 8 (pas de quote)
+let count = 8;
+// déclaration variable rows contenant un tableau avec des chaînes
+let rows = ["Naomi", "Quincy", "CamperChan"];
+// impression de la première valeur contenue dans le tableau rows
+console.log(rows[0]);
+// la valeur 10 est assignée à l'index de l'avant-dernier élément du tableau
+rows[rows.length - 1] = 10;
+// impression de l'ensemble des valeurs du tableau rows
+console.log(rows);
+// step 21
