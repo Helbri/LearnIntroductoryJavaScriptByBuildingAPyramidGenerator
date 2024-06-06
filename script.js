@@ -5,11 +5,14 @@ const count = 8;
 // déclaration de la variable rows contenant un tableau vide
 const rows = [];
 
-// déclaration de la fonction padRow
-function padRow() {}
+// déclaration de la fonction padRow avec la variable name en paramètre
+function padRow(name) {
+  // la fonction retourne la valeur de la variable name
+  return name;
+}
 
-//déclaration de la variable call
-const call = padRow();
+//déclaration de la variable call qui appelle la fonction padRow avec la chaîne CamperChan comme valeur de la variable name
+const call = padRow("CamperChan");
 
 // impression du résultat de call dans la console
 console.log(call);
@@ -34,4 +37,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 47
+// step 52
