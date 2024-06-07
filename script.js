@@ -7,8 +7,10 @@ const rows = [];
 
 // déclaration de la fonction padRow avec la variable name en paramètre
 function padRow(name) {
+  // déclaration de la constante test initialisée avec la valeur Testing
+  const test = "Testing";
   // la fonction retourne la valeur de la variable name
-  return name;
+  return character + name;
 }
 
 //déclaration de la variable call qui appelle la fonction padRow avec la chaîne CamperChan comme valeur de la variable name
@@ -37,4 +39,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 52
+// step 54
