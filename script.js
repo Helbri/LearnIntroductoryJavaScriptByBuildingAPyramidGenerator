@@ -9,7 +9,7 @@ const rows = [];
 function padRow(name) {
   // déclaration de la constante test initialisée avec la valeur Testing
   const test = "Testing";
-  // la fonction retourne la valeur de la variable name
+  // la fonction retourne la valeur des variables character + name
   return character + name;
 }
 
