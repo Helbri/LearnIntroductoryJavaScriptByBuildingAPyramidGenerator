@@ -7,16 +7,20 @@ const rows = [];
 
 // déclaration de la fonction padRow avec deux paramètres
 function padRow(rowNumber, rowCount) {
-  // la constante character est répétée autant de fois que la valeur de rowNumber
-  return character.repeat(rowNumber);
+  // la constante character est répétée autant de fois que la valeur de rowNumber, avec un espace vide concaténé avant et après
+  // l'espace concaténé est répété par le nombre produit par rowCount - rowNumber
+  return (
+    " ".repeat(rowCount - rowNumber) +
+    character.repeat(rowNumber) +
+    " ".repeat(rowCount - rowNumber)
+  );
 }
 
 // une boucle for a été déclarée. i vaut 0, il doit être inférieur à 8 et i est augmenté de 1
 for (let i = 0; i < count; i = i + 1) {
-  // la valeur de la variable character est ajoutée sur à la fin de chaque rangée du tableau rows
-  // character est répété autant de fois que la valeur possédée par i+1 avec la méthode .repeat()
-  // une valeur de i+1 est donnée à la méthode repeat pour qu'elle ai une valeur supérieure à 0
-  rows.push(character.repeat(i + 1));
+  // la fonction padRow est passée comme paramètre à la méthode .push, méthode associée à la variable rows
+  // les paramètres i + 1 et count sont passés à l'appel de fonction padRow
+  rows.push(padRow(i + 1, count));
 }
 
 // déclaration de la variable result
@@ -30,4 +34,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 60
+// step 64
