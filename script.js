@@ -17,12 +17,15 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
-// une boucle for a été déclarée. i vaut 0, il doit être inférieur à 8 et i est augmenté de lui-même  de + 1 avec ++
-for (let i = 0; i < count; i++) {
+// TODO: use a different type of loop
+/*
+// une boucle for a été déclarée. i vaut 1, il doit être inférieur ou égal à 8 et i est incrémenté de lui-même  de + 1 avec ++
+for (let i = 1; i <= count; i++) {
   // la fonction padRow est passée comme paramètre à la méthode .push, méthode associée à la variable rows
-  // les paramètres i + 1 et count sont passés à l'appel de fonction padRow
-  rows.push(padRow(i + 1, count));
+  // les paramètres i et count sont passés à l'appel de fonction padRow
+  rows.push(padRow(i, count));
 }
+*/
 
 // déclaration de la variable result
 let result = "";
@@ -35,4 +38,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 67
+// step 72
