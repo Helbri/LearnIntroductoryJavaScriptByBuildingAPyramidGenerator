@@ -27,9 +27,14 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-// création d'un boucle if avec pour condition la chaîne "false" qui prend une valeur véridique et devient true
-if ("false") {
+// création d'un boucle if avec pour condition la chaîne "" qui prend une valeur fausse et devient un booléen faux
+if ("") {
+  // ligne pour retourner la chaîne si condition juste
   console.log("Condition is true");
+  // else if avec une condition 5<10 qui est vérifiée pour connaître sa situation booléenne puis considéré comme un vrai booléen si la condition est véridique
+} else if (5 < 10) {
+  // ligne pour retourner la chaîne si condition la condition est respectée (vrai booléen)
+  console.log("5 is less than 10");
 }
 
 // déclaration de la variable result
@@ -43,4 +48,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 75
+// step 77
