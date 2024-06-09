@@ -9,15 +9,16 @@ const rows = [];
 function padRow(rowNumber, rowCount) {
   // la constante character est répétée autant de fois que la valeur de rowNumber, avec un espace vide concaténé avant et après
   // l'espace concaténé est répété par le nombre produit par rowCount - rowNumber
+  // character est répété autant de fois que la valeur de 2 * rowNumber - 1
   return (
     " ".repeat(rowCount - rowNumber) +
-    character.repeat(rowNumber) +
+    character.repeat(2 * rowNumber - 1) +
     " ".repeat(rowCount - rowNumber)
   );
 }
 
-// une boucle for a été déclarée. i vaut 0, il doit être inférieur à 8 et i est augmenté de 1
-for (let i = 0; i < count; i = i + 1) {
+// une boucle for a été déclarée. i vaut 0, il doit être inférieur à 8 et i est augmenté de lui-même + 1
+for (let i = 0; i < count; i += 1) {
   // la fonction padRow est passée comme paramètre à la méthode .push, méthode associée à la variable rows
   // les paramètres i + 1 et count sont passés à l'appel de fonction padRow
   rows.push(padRow(i + 1, count));
