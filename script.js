@@ -27,6 +27,11 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
+// création d'un boucle if avec pour condition la chaîne "false" qui prend une valeur véridique et devient true
+if ("false") {
+  console.log("Condition is true");
+}
+
 // déclaration de la variable result
 let result = "";
 
@@ -38,4 +43,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 72
+// step 75
