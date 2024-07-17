@@ -27,18 +27,17 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-// création d'une boucle et block if avec pour condition la chaîne "" qui prend une valeur fausse et devient un booléen faux
-if ("") {
-  // ligne pour retourner la chaîne si condition juste
-  console.log("Condition is true");
-  // bloc else if avec une condition 5>10 qui est vérifiée pour connaître sa situation booléenne puis considéré comme un vrai booléen si la condition est véridique, autrement la condition est considérée comme fausse
-} else if (5 > 10) {
-  // ligne pour retourner la chaîne si condition la condition est respectée (vrai booléen)
-  console.log("5 is less than 10");
-  // bloc else qui s'exécute si toutes les conditions avant sont considérées comme fausses
-} else {
-  // ligne pour retourner la chaîne si condition la condition est respectée (vrai booléen)
-  console.log("This is the else block");
+// création de la variable done avec la valeur 0
+let done = 0;
+
+// déclaration d'une boucle while qui s'exécute encore et encore jusqu'à ce que la condition spécifiée ne soit plus vraie
+// elle prend comme condition done !== count vérifiant l'inégalité stricte
+while (done !== count) {
+  // la variable done s'incrémente de 1
+  done++;
+  // la méthode push pousse à la fin du tableau rows les paramètres quelle contient
+  rows.push(padRow(done, count));
+  // bloc if vérifiant l'égalité stricte (===) entre la variable done et la constante count pour éviter un comportement étrange où une chaîne pourrait être égale à un nombre
 }
 
 // déclaration de la variable result
@@ -52,4 +51,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 78
+// step 93
