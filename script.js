@@ -17,11 +17,20 @@ function padRow(rowNumber, rowCount) {
   );
 }
 
+// TODO: use a different type of loop
+/*
 // une boucle for a été déclarée. i vaut 1, il doit être inférieur ou égal à 8 et i est incrémenté de lui-même  de + 1 avec ++
 for (let i = 1; i <= count; i++) {
   // la fonction padRow est passée comme paramètre à la méthode .push, méthode associée à la variable rows
   // les paramètres i et count sont passés à l'appel de fonction padRow
   rows.push(padRow(i, count));
+}
+*/
+
+// boucle 'while' qui continue tant que 'rows.length' est inférieur à 'count'
+while (rows.length < count) {
+  // ajoute le résultat de 'padRow(rows.length + 1, count)' à la fin du tableau 'rows'
+  rows.push(padRow(rows.length + 1, count));
 }
 
 // déclaration de la variable result
@@ -35,4 +44,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 70
+// step 98
