@@ -28,9 +28,14 @@ for (let i = 1; i <= count; i++) {
 */
 
 // boucle 'while' qui continue tant que 'rows.length' est inférieur à 'count'
-while (rows.length < count) {
+/*while (rows.length < count) {
   // ajoute le résultat de 'padRow(rows.length + 1, count)' à la fin du tableau 'rows'
   rows.push(padRow(rows.length + 1, count));
+}*/
+
+// boucle 'for' qui continue tant que 'i' est inférieur à 0, l'opérateur de décrémentation est utilisé --
+for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
 }
 
 // déclaration de la variable result
@@ -44,4 +49,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 98
+// step 104
