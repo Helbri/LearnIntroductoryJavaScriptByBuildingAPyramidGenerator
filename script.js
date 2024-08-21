@@ -27,17 +27,10 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-// création de la variable done avec la valeur 0
-let done = 0;
-
-// déclaration d'une boucle while qui s'exécute encore et encore jusqu'à ce que la condition spécifiée ne soit plus vraie
-// elle prend comme condition done !== count vérifiant l'inégalité stricte
-while (done !== count) {
-  // la variable done s'incrémente de 1
-  done++;
-  // la méthode push pousse à la fin du tableau rows les paramètres quelle contient
-  rows.push(padRow(done, count));
-  // bloc if vérifiant l'égalité stricte (===) entre la variable done et la constante count pour éviter un comportement étrange où une chaîne pourrait être égale à un nombre
+// boucle 'while' qui continue tant que 'rows.length' est inférieur à 'count'
+while (rows.length < count) {
+  // ajoute le résultat de 'padRow(rows.length + 1, count)' à la fin du tableau 'rows'
+  rows.push(padRow(rows.length + 1, count));
 }
 
 // déclaration de la variable result
@@ -51,4 +44,4 @@ for (const row of rows) {
 
 // impression du résultat de result dans la console
 console.log(result);
-// step 93
+// step 98
